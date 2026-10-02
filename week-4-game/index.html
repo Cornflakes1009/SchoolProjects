@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>CrystalsCollector</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <div>
+                    <h1>CrystalsCollector!</h1>
+                </div>
+
+            </div>
+        </div>
+        <div class="row ml-0 mt-2">
+            <div class="col-sm-12 col-md-6 instructions mb-2">
+                <div>
+                    <p>You will be given a random number at the start of the game.</p>
+
+                    <p> There are four crystals below. By clicking on a crystal you will add a specific amount of points to your
+                        crystal score.</p>
+
+                    <p>You win the game by matching your total score to the random number, you lose the game if your
+                        total score goes above the random number.</p>
+
+                    <p>The value of each crystal is hidden from you until you click on it.</p>
+
+                    <p>Each time the game starts, the hidden value of the crystals and the target score changes.</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-8">
+                <div class="numberToMatchBox">
+                    <div class="numberToMatch pl-4">7</div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-4 stats">
+                <div id="win-or-lose"></div>
+                <div id="wins">Wins: 0</div>
+                <div id="losses">Losses: 0</div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-md-1 col-sm-12 ">
+                <div>
+                    <div class="gem ">
+                        <button><img class="gemButton1 " src="assets/images/gem1.png" alt="crystal" width="75px" height="75px"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1 col-sm-12">
+                <div class="gem ">
+                    <button><img class="gemButton2 " src="assets/images/gem2.png" alt="crystal" width="75px" height="75px"></button>
+                </div>
+            </div>
+            <div class="col-md-1 col-sm-12 ">
+                <div class="gem ">
+                    <button><img class="gemButton3 " src="assets/images/gem3.png" alt="crystal" width="75px" height="75px"></button>
+                </div>
+            </div>
+            <div class="col-md-1 col-sm-12 ">
+                <div class="gem ">
+                    <button><img class="gemButton4 " src="assets/images/gem4.png" alt="crystal" width="75px" height="75px"></button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-sm-8">
+                <div class="scoreBoxBanner">
+                    <div class="mt-2">Your total score is</div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row scoreBox">
+            <div class="col-md-3 scoreBox mt-2">
+                <div class="scoreBoxBanner">
+                    <div class="scoreBox score pl-4">0</div>
+                </div>
+            </div>
+
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!--<script src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script> -->
+        <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>

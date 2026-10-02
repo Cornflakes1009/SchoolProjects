@@ -1,0 +1,1 @@
+This repository contains the exercises from my Object Oriented Programming 1 class in C#. 
